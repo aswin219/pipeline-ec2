@@ -1,6 +1,6 @@
 pipeline {
 
-    agent any
+    agent {label 'agent-node-1'}
     
     environment {
         PASS = credentials('GIT-PASS') 
